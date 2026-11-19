@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Tecnologías web</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a> ·
+            <a href="impacto.html">Impacto</a> ·
+            <a href="caso-practico.html">Caso práctico</a> ·
+            <a href="contacto.html" aria-current="page">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+
+        <p>
+            ¿Qué servicio de tu barrio te gustaría encontrar en la web?
+            Cuéntanos tu idea o comparte una sugerencia sobre el sitio.
+        </p>
+
+        <p id="aviso-formulario">
+            Este formulario nos ayudara a conocer mas sobre tus intereses
+        </p>
+
+        <form action="contacto.html#aviso-formulario" aria-describedby="aviso-formulario">
+            <fieldset>
+                <legend>Mensaje</legend>
+
+                <p>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" required>
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico</label><br>
+                    <input type="email" id="correo" required>
+                </p>
+
+                <p>
+                    <label for="asunto">Asunto</label><br>
+                    <input type="text" id="asunto" required>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea id="mensaje" rows="5" cols="30" required></textarea>
+                </p>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Freddy Hidalgo · Tecnologías Web · UTPL</p>
+    </footer>
+</body>
+</html>
